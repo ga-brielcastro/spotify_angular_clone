@@ -16,7 +16,7 @@ html, body {
 }
 
 //  To global app
-flex {
+.flex {
   display: flex;
 
   &-center {
@@ -24,3 +24,4 @@ flex {
     align-items: center;
   }
 }
+
