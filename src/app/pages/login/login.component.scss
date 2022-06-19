@@ -15,14 +15,15 @@
     justify-content: space-around;
 
     img {
-      width: 40%;
+      width: 60%;
     }
 
     button {
       font-size: 1.2rem;
-      font-weight: 600;
+      font-weight: 500;
       min-width: 200px;
-      padding: 20px;
+      padding: 15px;
+      margin-top: 60px;
       border-radius: 500px;
       border: 0;
       background-color: $primary-color;
@@ -30,5 +31,51 @@
       cursor: pointer;
     }
   }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 35%;
+      height: 100%;
+      padding: 20px;
+    }
+
+    .right {
+      background-image: url('https://wallpapersmug.com/large/0f9d89/rock_music_concert_dance_party.jpg');
+      background-position: center;
+      background-size: cover;
+      width: 65%;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 720px) {
+
+    .base {
+      img {
+        width: 100%;
+      }
+    }
+
+
+    .row {
+      flex-direction: column;
+
+      .right {
+        display: none;
+      }
+    }
+  }
 }
+
 
